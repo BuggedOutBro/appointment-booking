@@ -37,8 +37,8 @@
 
 ### Notes
 - Replace `{RootPath}` with the actual path to your project root directory.
-- The connection string has been added to the `appsettings.json` file. While using `secrets.json` is a better approach, `appsettings.json` has been used for simplicity in this challenge.
+- **If cloning the project from GitHub**, please add the connection string in the `appsettings.json` or `secrets.json` file. The connection string will be sent via email.
 
 ### Optional
 - You can also use Visual Studio or Visual Studio Code to build and run the project instead of using the CLI.
-- **If cloning the project from GitHub**, please add the connection string in the `appsettings.json` or `secrets.json` file. The connection string will be sent via email.
+
