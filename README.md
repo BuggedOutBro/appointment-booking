@@ -1,7 +1,7 @@
 ## Steps to Set Up the Code
 
 ### 1. Set Up the Database
-1. Navigate to the database folder:
+1. Navigate to the files folder:
    ```bash
    cd {RootPath}/files/database
    ```
