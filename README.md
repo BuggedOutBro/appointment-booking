@@ -1,7 +1,9 @@
 ## Steps to Set Up the Code
 
-### 1. Set Up the Database
-1. Navigate to the files folder sent via email:
+### 1. Clone the project
+
+### 2. Set Up the Database
+1. Navigate to the files folder:
    ```bash
    cd {RootPath}/files/database
    ```
@@ -13,7 +15,7 @@
    ```
 4. Open Docker Desktop and confirm that the container is running successfully.
 
-### 2. Set Up the API
+### 3. Set Up the API
 1. Ensure that the .NET 8 SDK is installed on your system.
    - If not, download and install it from the official [.NET website](https://dotnet.microsoft.com/).
 2. Navigate to the `appointment-booking-api/appointment-booking` folder:
@@ -29,7 +31,7 @@
    dotnet run
    ```
 
-### 3. Verify the API
+### 4. Verify the API
 1. Once the application is running, it will be available at:
    - [http://localhost:3000](http://localhost:3000)
 2. Open Swagger in your browser to explore and test the API endpoints. Swagger is enabled in the Development environment:
@@ -37,7 +39,7 @@
 
 ### Notes
 - Replace `{RootPath}` with the actual path to your project root directory.
-- **If cloning the project from GitHub**, please add the connection string in the `appsettings.json` or `secrets.json` file. The connection string will be sent via email.
+- I have added the connection string in the appsettings.json file. Although using secrets.json would be a better approach, appsettings.json has been used for simplicity in this challenge.
 
 ### Optional
 - You can also use Visual Studio or Visual Studio Code to build and run the project instead of using the CLI.
