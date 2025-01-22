@@ -40,7 +40,7 @@
 ### Notes
 - Replace `{RootPath}` with the actual path to your project root directory.
 - I have added the connection string in the appsettings.json file. Although using secrets.json would be a better approach, appsettings.json has been used for simplicity in this challenge.
-
-### Optional
 - You can also use Visual Studio or Visual Studio Code to build and run the project instead of using the CLI.
+
+
 
