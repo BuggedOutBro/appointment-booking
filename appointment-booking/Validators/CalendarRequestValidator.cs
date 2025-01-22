@@ -17,16 +17,16 @@ namespace appointment_booking.Validators
       RuleFor(data => data.Products).NotEmpty().NotNull()
         .Must(x => x.All(p => !string.IsNullOrWhiteSpace(p)))
         .Must(products => AreAllStrictlyAllowedEnumValues<Products>(products))
-       .WithMessage($"Invalid Products. Supported values are {GetAllowedEnumValues<Products>()}.");
+       .WithMessage($"Slot cannot be booked. Supported values are {GetAllowedEnumValues<Products>()}.");
 
       RuleFor(x => x.Language)
         .NotEmpty().NotNull()
         .Must(language => IsStrictlyAllowedEnumValue<Language>(language))
-        .WithMessage($"Invalid Language. Supported values are {GetAllowedEnumValues<Language>()}");
+        .WithMessage($"Slot cannot be booked. Supported values are {GetAllowedEnumValues<Language>()}");
 
       RuleFor(data => data.Rating).NotEmpty().NotNull()
           .Must(rating => IsStrictlyAllowedEnumValue<Ratings>(rating))
-          .WithMessage($"Invalid Rating. Supported values are {GetAllowedEnumValues<Ratings>()}");
+          .WithMessage($"Slot cannot be booked. Supported values are {GetAllowedEnumValues<Ratings>()}");
     }
 
     private bool BeAValidDate(DateTime date)
